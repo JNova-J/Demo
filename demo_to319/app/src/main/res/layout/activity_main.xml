@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+<com.flyco.tablayout.SlidingTabLayout
+    android:id="@+id/stl_main"
+    android:layout_width="match_parent"
+    android:layout_height="50dp"
+    app:layout_constraintTop_toTopOf="parent"
+    app:layout_constraintLeft_toLeftOf="parent"
+    android:orientation="vertical"
+    app:tl_tab_space_equal="true"
+    app:tl_indicator_color="#FF6E6C"
+    app:tl_indicator_width="10dp"
+    app:tl_indicator_height="3dp"
+app:tl_underline_color="#17999999"
+    app:tl_underline_height="2dp"
+    app:tl_indicator_corner_radius="1.5dp"
+    app:tl_textUnSelectSize="15sp"
+    app:tl_textSelectSize="18sp"
+    app:tl_textUnselectColor="#999999"
+    app:tl_textSelectColor="#FF6E6C"/>
+    <androidx.viewpager.widget.ViewPager
+        android:id="@+id/vp"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        app:layout_constraintTop_toBottomOf="@id/stl_main"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_marginTop="5dp"/>
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
